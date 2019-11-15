@@ -20,7 +20,6 @@ namespace Aksl.Concurrency
         {
             public void GetResult()
             {
-
             }
 
             public Awaitable GetAwaiter() => this;

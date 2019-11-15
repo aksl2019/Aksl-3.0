@@ -34,7 +34,7 @@ namespace Aksl.Concurrency
         /// Waits for the countdown completion signal.
         /// </summary>
         /// <returns></returns>
-        public Task WaitAsync => _amre.WaitAsync();
+        public Task WaitAsync() => _amre.WaitAsync();
 
         /// <summary>
         /// Registers a signal, decrementing the current count.
@@ -64,7 +64,7 @@ namespace Aksl.Concurrency
         public Task SignalAndWait()
         {
             Signal();
-            return WaitAsync;
+            return WaitAsync();
         }
     }
 }
