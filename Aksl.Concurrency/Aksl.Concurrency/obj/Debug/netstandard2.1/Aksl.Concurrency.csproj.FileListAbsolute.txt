@@ -6,3 +6,11 @@ C:\Aksl 3.0\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.AssemblyI
 C:\Aksl 3.0\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.AssemblyInfo.cs
 C:\Aksl 3.0\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.dll
 C:\Aksl 3.0\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.pdb
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\bin\Debug\netstandard2.1\Aksl.Concurrency.deps.json
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\bin\Debug\netstandard2.1\Aksl.Concurrency.dll
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\bin\Debug\netstandard2.1\Aksl.Concurrency.pdb
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.dll
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.pdb
+C:\Aksl 3.0\Aksl.Concurrency\Aksl.Concurrency\obj\Debug\netstandard2.1\Aksl.Concurrency.csprojAssemblyReference.cache
