@@ -1,0 +1,13 @@
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\obj\Debug\netstandard2.1\Aksl.BulkInsert.csprojAssemblyReference.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\obj\Debug\netstandard2.1\Aksl.BulkInsert.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\obj\Debug\netstandard2.1\Aksl.BulkInsert.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.BulkInsert.deps.json
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.BulkInsert.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.BulkInsert.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.Concurrency.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.Pipeline.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.Concurrency.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\bin\Debug\netstandard2.1\Aksl.Pipeline.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\obj\Debug\netstandard2.1\Aksl.BulkInsert.csproj.CopyComplete
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\obj\Debug\netstandard2.1\Aksl.BulkInsert.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Aksl.BulkInsert\obj\Debug\netstandard2.1\Aksl.BulkInsert.pdb
