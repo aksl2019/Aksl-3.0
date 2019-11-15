@@ -1,0 +1,24 @@
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\bin\Debug\netstandard2.1\Contoso.Domain.deps.json
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\bin\Debug\netstandard2.1\Contoso.Domain.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\bin\Debug\netstandard2.1\Contoso.Domain.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\bin\Debug\netstandard2.1\Aksl.Data.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\bin\Debug\netstandard2.1\Aksl.Data.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.csprojAssemblyReference.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.csproj.CopyComplete
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.csprojAssemblyReference.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\bin\Debug\netstandard2.1\Contoso.Domain.deps.json
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\bin\Debug\netstandard2.1\Contoso.Domain.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\bin\Debug\netstandard2.1\Contoso.Domain.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\bin\Debug\netstandard2.1\Aksl.Data.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\bin\Debug\netstandard2.1\Aksl.Data.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\Contoso.Domain.csproj.CopyComplete
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\EFCoreSqlServerNetTopologySuite.cs
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.Domain\obj\Debug\netstandard2.1\EFCoreSqliteNetTopologySuite.cs

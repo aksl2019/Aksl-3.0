@@ -1,0 +1,46 @@
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.SqlServer.deps.json
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.SqlServer.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.SqlServer.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.BulkInsert.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Concurrency.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Data.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Pipeline.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Domain.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Infrastructure.Data.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Domain.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Infrastructure.Data.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.BulkInsert.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Concurrency.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Data.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Pipeline.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.csprojAssemblyReference.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.csproj.CopyComplete
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.SqlServer.deps.json
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.SqlServer.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.SqlServer.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.BulkInsert.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Concurrency.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Data.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Pipeline.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Domain.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Infrastructure.Data.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.DataSource.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Domain.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Contoso.Infrastructure.Data.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.BulkInsert.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Concurrency.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Data.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\bin\Debug\netstandard2.1\Aksl.Pipeline.pdb
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.csprojAssemblyReference.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.csproj.CopyComplete
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.dll
+C:\Aksl 3.0\Aksl.BulkInsert\Contoso 3.1\Contoso.DataSource.SqlServer\obj\Debug\netstandard2.1\Contoso.DataSource.SqlServer.pdb
