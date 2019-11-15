@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Aksl.Pipeline
+namespace Contoso.Domain
 {
     public class Class1
     {

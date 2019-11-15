@@ -177,6 +177,7 @@ namespace Aksl.Pipeline
             }
             return Task.FromResult(taken);
         }
+
         private string ReadLineLocal(out bool trailingLF)
         {
             int offset = _offset;
