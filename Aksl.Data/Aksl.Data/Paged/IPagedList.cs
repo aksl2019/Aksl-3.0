@@ -7,7 +7,7 @@ namespace Aksl.Data
     /// <summary>
     /// Paged list interface
     /// </summary>
-    public interface IPagedList<T> : IList<T>
+    public interface IPagedList<T> : IList<T> 
     {
         int PageIndex { get; }
 

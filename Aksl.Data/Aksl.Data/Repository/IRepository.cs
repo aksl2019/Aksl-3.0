@@ -36,7 +36,7 @@ namespace Aksl.Data
         /// <param name="id">Identifier</param>
         /// <returns>Entity</returns>
         // TEntity GetById(object id);
-        Task<TEntity> GetByIdAsync(object id);
+        ValueTask<TEntity> GetByIdAsync(object id);
         #endregion
 
         #region Insert Methods
@@ -45,7 +45,7 @@ namespace Aksl.Data
         /// </summary>
         /// <param name="entity">Entity</param>
         //Task<TEntity> InsertAsync(TEntity entity);
-        Task InsertAsync(TEntity entity);
+        ValueTask InsertAsync(TEntity entity);
 
         /// <summary>
         /// Insert entities
@@ -53,9 +53,9 @@ namespace Aksl.Data
         /// <param name="entities">Entities</param>
        // Task InsertAsync(IEnumerable<TEntity> entities);
 
-        Task<IEnumerable<TEntity>> InsertAsync(IEnumerable<TEntity> entities);
+        ValueTask<IEnumerable<TEntity>> InsertAsync(IEnumerable<TEntity> entities);
 
-        Task<IEnumerable<TEntity>> BulkInsertAsync(IEnumerable<TEntity> entities);
+        ValueTask<IEnumerable<TEntity>> BulkInsertAsync(IEnumerable<TEntity> entities);
         #endregion
 
         #region Update Methods
@@ -63,13 +63,13 @@ namespace Aksl.Data
         /// Update entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        Task UpdateAsync(TEntity entity);
+        ValueTask UpdateAsync(TEntity entity);
 
         /// <summary>
         /// Update entities
         /// </summary>
         /// <param name="entities">Entities</param>
-        Task UpdateAsync(IEnumerable<TEntity> entities);
+        ValueTask UpdateAsync(IEnumerable<TEntity> entities);
         #endregion
 
         #region Delete Methods
@@ -77,13 +77,13 @@ namespace Aksl.Data
         /// Delete entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        Task DeleteAsync(TEntity entity);
+        ValueTask DeleteAsync(TEntity entity);
 
         /// <summary>
         /// Delete entities
         /// </summary>
         /// <param name="entities">Entities</param>
-        Task DeleteAsync(IEnumerable<TEntity> entities);
+        ValueTask DeleteAsync(IEnumerable<TEntity> entities);
         #endregion
     }
 }

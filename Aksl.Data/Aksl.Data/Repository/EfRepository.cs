@@ -60,7 +60,7 @@ namespace Aksl.Data
         /// </summary>
         /// <param name="id">Identifier</param>
         /// <returns>Entity</returns>
-        public virtual async Task<TEntity> GetByIdAsync(object id)
+        public virtual async ValueTask<TEntity> GetByIdAsync(object id)
         {
             var entity = await Entities.FindAsync(id);
             return entity;
@@ -73,7 +73,7 @@ namespace Aksl.Data
         /// </summary>
         /// <param name="entity">Entity</param>
        // public virtual async Task<TEntity> InsertAsync(TEntity entity)
-        public virtual async Task InsertAsync(TEntity entity)
+        public virtual async ValueTask InsertAsync(TEntity entity)
         {
             if (entity == null)
             {
@@ -97,7 +97,7 @@ namespace Aksl.Data
         /// </summary>
         /// <param name="entities">Entities</param>
         // public async Task InsertAsync(IEnumerable<TEntity> entities)
-        public async Task<IEnumerable<TEntity>> InsertAsync(IEnumerable<TEntity> entities)
+        public async ValueTask<IEnumerable<TEntity>> InsertAsync(IEnumerable<TEntity> entities)
         {
             if (entities == null)
             {
@@ -117,7 +117,7 @@ namespace Aksl.Data
             }
         }
 
-        public async Task<IEnumerable<TEntity>> BulkInsertAsync(IEnumerable<TEntity> entities)
+        public async ValueTask<IEnumerable<TEntity>> BulkInsertAsync(IEnumerable<TEntity> entities)
         {
             if (entities == null)
             {
@@ -146,7 +146,7 @@ namespace Aksl.Data
         /// Update entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        public async Task UpdateAsync(TEntity entity)
+        public async ValueTask UpdateAsync(TEntity entity)
         {
             if (entity == null)
             {
@@ -169,7 +169,7 @@ namespace Aksl.Data
         /// Update entities
         /// </summary>
         /// <param name="entities">Entities</param>
-        public async Task UpdateAsync(IEnumerable<TEntity> entities)
+        public async ValueTask UpdateAsync(IEnumerable<TEntity> entities)
         {
             if (entities == null)
             {
@@ -194,7 +194,7 @@ namespace Aksl.Data
         /// Delete entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        public async Task DeleteAsync(TEntity entity)
+        public async ValueTask DeleteAsync(TEntity entity)
         {
             if (entity == null)
             {
@@ -217,7 +217,7 @@ namespace Aksl.Data
         /// Delete entities
         /// </summary>
         /// <param name="entities">Entities</param>
-        public async Task DeleteAsync(IEnumerable<TEntity> entities)
+        public async ValueTask DeleteAsync(IEnumerable<TEntity> entities)
         {
             if (entities == null)
             {

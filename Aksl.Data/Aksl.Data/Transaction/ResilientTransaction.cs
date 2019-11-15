@@ -14,6 +14,7 @@ namespace Aksl.Data
 
         public static ResilientTransaction New(DbContext context) =>
                                  new ResilientTransaction(context);
+
         private ResilientTransaction(DbContext context) =>
                                _context = context ?? throw new ArgumentNullException(nameof(context));
 

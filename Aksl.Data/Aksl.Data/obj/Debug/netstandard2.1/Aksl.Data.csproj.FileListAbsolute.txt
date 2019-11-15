@@ -2,7 +2,7 @@ C:\Aksl 3.0\Aksl.Data\Aksl.Data\bin\Debug\netstandard2.1\Aksl.Data.deps.json
 C:\Aksl 3.0\Aksl.Data\Aksl.Data\bin\Debug\netstandard2.1\Aksl.Data.dll
 C:\Aksl 3.0\Aksl.Data\Aksl.Data\obj\Debug\netstandard2.1\Aksl.Data.AssemblyInfoInputs.cache
 C:\Aksl 3.0\Aksl.Data\Aksl.Data\obj\Debug\netstandard2.1\Aksl.Data.AssemblyInfo.cs
-C:\Aksl 3.0\Aksl.Data\Aksl.Data\obj\Debug\netstandard2.1\Aksl.Data.csprojAssemblyReference.cache
 C:\Aksl 3.0\Aksl.Data\Aksl.Data\bin\Debug\netstandard2.1\Aksl.Data.pdb
 C:\Aksl 3.0\Aksl.Data\Aksl.Data\obj\Debug\netstandard2.1\Aksl.Data.dll
 C:\Aksl 3.0\Aksl.Data\Aksl.Data\obj\Debug\netstandard2.1\Aksl.Data.pdb
+C:\Aksl 3.0\Aksl.Data\Aksl.Data\obj\Debug\netstandard2.1\Aksl.Data.csprojAssemblyReference.cache

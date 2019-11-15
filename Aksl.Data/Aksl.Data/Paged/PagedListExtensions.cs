@@ -16,19 +16,31 @@ namespace Aksl.Data
         /// <param name="pageIndex">当前页码, 0开始</param>
         /// <param name="pageSize">每页大下</param>
         /// <returns></returns>
-        public static async Task<IPagedList<T>> AddPagedAsync<T>(this IQueryable<T> source, int pageIndex, int pageSize) where T : class
+        public static async ValueTask<IPagedList<T>> AddPagedAsync<T>(this IQueryable<T> source, int pageIndex, int pageSize) where T : class
         {
             var totalCount = source.Count();
 
             var pagedList = await source
-                                   .Skip(pageSize * pageIndex)
-                                   .Take(pageSize)
-                                   .ToListAsync();
+                                 .Skip(pageSize * pageIndex)
+                                 .Take(pageSize)
+                                 .ToListAsync();
 
             return new PagedList<T>(pageIndex, pageSize, totalCount, pagedList);
         }
 
-        public static Task<IPagedList<T>> AddPagedAsync<T>(this IEnumerable<T> source, int pageIndex, int pageSize) where T : class
+        //public static async IAsyncEnumerable<T> AddPagedAsync<T>(this IQueryable<T> source, int pageIndex, int pageSize) where T : class
+        //{
+        //    var totalCount = source.Count();
+
+        //    var pagedList = await source
+        //                           .Skip(pageSize * pageIndex)
+        //                           .Take(pageSize)
+        //                           .AsAsyncEnumerable();
+
+        //    return new PagedList<T>(pageIndex, pageSize, totalCount, pagedList);
+        //}
+
+        public static ValueTask<IPagedList<T>> AddPagedAsync<T>(this IEnumerable<T> source, int pageIndex, int pageSize) where T : class
         {
             var totalCount = source.Count();
 
@@ -37,7 +49,7 @@ namespace Aksl.Data
                             .Take(pageSize)
                             .ToList();
 
-            return Task.FromResult<IPagedList<T>>(new PagedList<T>(pageIndex, pageSize, totalCount, pagedList));
+            return new ValueTask<IPagedList<T>>(new PagedList<T>(pageIndex, pageSize, totalCount, pagedList));
         }
     }
 }
