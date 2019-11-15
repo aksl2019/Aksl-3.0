@@ -1,0 +1,8 @@
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\bin\Debug\netstandard2.1\Aksl.Net.Http.deps.json
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\bin\Debug\netstandard2.1\Aksl.Net.Http.dll
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\bin\Debug\netstandard2.1\Aksl.Net.Http.pdb
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\obj\Debug\netstandard2.1\Aksl.Net.Http.csprojAssemblyReference.cache
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\obj\Debug\netstandard2.1\Aksl.Net.Http.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\obj\Debug\netstandard2.1\Aksl.Net.Http.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\obj\Debug\netstandard2.1\Aksl.Net.Http.dll
+C:\Aksl 3.0\Aksl.Net.Http\Sdk\Aksl.Net.Http\obj\Debug\netstandard2.1\Aksl.Net.Http.pdb

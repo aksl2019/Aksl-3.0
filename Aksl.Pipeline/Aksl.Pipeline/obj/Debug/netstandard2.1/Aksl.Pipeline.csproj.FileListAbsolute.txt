@@ -1,0 +1,8 @@
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\bin\Debug\netstandard2.1\Aksl.Pipeline.deps.json
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\bin\Debug\netstandard2.1\Aksl.Pipeline.dll
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\obj\Debug\netstandard2.1\Aksl.Pipeline.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\obj\Debug\netstandard2.1\Aksl.Pipeline.AssemblyInfo.cs
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\bin\Debug\netstandard2.1\Aksl.Pipeline.pdb
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\obj\Debug\netstandard2.1\Aksl.Pipeline.dll
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\obj\Debug\netstandard2.1\Aksl.Pipeline.pdb
+C:\Aksl 3.0\Aksl.Pipeline\Aksl.Pipeline\obj\Debug\netstandard2.1\Aksl.Pipeline.csprojAssemblyReference.cache
