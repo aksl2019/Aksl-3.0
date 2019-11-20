@@ -49,7 +49,7 @@ namespace Aksl.Retry
             InvokeWithRetryAsync(wrapped, operationTimeout, cancellationToken, logger).ConfigureAwait(false).GetAwaiter().GetResult();
         }
 
-        public TResult InvokeWithRetryAsync<TResult>(Func<CancellationToken, TResult> operation, TimeSpan? operationTimeout = null, CancellationToken cancellationToken = default(CancellationToken), ILogger logger = null)
+        public TResult InvokeWithRetryAsync<TResult>(Func<CancellationToken, TResult> operation, TimeSpan? operationTimeout = null, CancellationToken cancellationToken = default, ILogger logger = null)
         {
             if (operation == null)
                 throw new ArgumentNullException(nameof(operation));
@@ -64,7 +64,7 @@ namespace Aksl.Retry
             return outerResult;
         }
 
-        public async Task InvokeWithRetryAsync(Func<CancellationToken, Task> operation, TimeSpan? operationTimeout = null, CancellationToken cancellationToken = default(CancellationToken), ILogger logger = null)
+        public async Task InvokeWithRetryAsync(Func<CancellationToken, Task> operation, TimeSpan? operationTimeout = null, CancellationToken cancellationToken = default, ILogger logger = null)
         {
             if (operation == null)
                 throw new ArgumentNullException(nameof(operation));
@@ -78,7 +78,7 @@ namespace Aksl.Retry
             await InvokeWithRetryAsync(wrapped, operationTimeout, cancellationToken, logger);
         }
 
-        public async Task<TResult> InvokeWithRetryAsync<TResult>(Func<CancellationToken, Task<TResult>> operation, TimeSpan? operationTimeout = null, CancellationToken cancellationToken = default(CancellationToken), ILogger logger = null)
+        public async Task<TResult> InvokeWithRetryAsync<TResult>(Func<CancellationToken, Task<TResult>> operation, TimeSpan? operationTimeout = null, CancellationToken cancellationToken = default, ILogger logger = null)
         {
             if (operation == null)
                 throw new ArgumentNullException(nameof(operation));
