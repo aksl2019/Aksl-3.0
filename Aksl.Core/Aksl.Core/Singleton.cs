@@ -5,7 +5,7 @@ using System.Collections.Concurrent;
 
 namespace Aksl.Core
 {
-    public static class Singleton<T>  where T : new()
+    public static class Singleton<T> where T : new()
     {
         private static ConcurrentDictionary<Type, T> _instances = new ConcurrentDictionary<Type, T>();
 
