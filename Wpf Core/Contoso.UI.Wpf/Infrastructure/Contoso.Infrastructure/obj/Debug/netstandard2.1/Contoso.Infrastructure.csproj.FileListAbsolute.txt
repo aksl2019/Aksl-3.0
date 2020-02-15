@@ -1,0 +1,24 @@
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Contoso.Infrastructure.deps.json
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Contoso.Infrastructure.dll
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Contoso.Infrastructure.pdb
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Prism.dll
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Prism.pdb
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Prism.xml
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.csprojAssemblyReference.cache
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.AssemblyInfoInputs.cache
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.AssemblyInfo.cs
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.csproj.CopyComplete
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.dll
+D:\TrainingKits\UWP\Labs\Tree.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.pdb
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Contoso.Infrastructure.deps.json
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Contoso.Infrastructure.dll
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Contoso.Infrastructure.pdb
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Prism.dll
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Prism.pdb
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\bin\Debug\netstandard2.1\Prism.xml
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.csprojAssemblyReference.cache
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.AssemblyInfoInputs.cache
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.AssemblyInfo.cs
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.csproj.CopyComplete
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.dll
+C:\Aksl 3.0\Wpf Core\Contoso.UI.Wpf\Infrastructure\Contoso.Infrastructure\obj\Debug\netstandard2.1\Contoso.Infrastructure.pdb

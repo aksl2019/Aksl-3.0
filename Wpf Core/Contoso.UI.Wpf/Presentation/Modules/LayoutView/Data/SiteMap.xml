@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SiteMapNode title="根">
+	<SiteMapNode title="文件" imageUri="" roles="SystemAdministrator" >
+		<SiteMapNode title="新建">
+		    <SiteMapNode title="项目" moduleName="ManageModulePermissionModule" viewTypeAssemblyQualifiedName="Tree.UI.Modules.ManageModulePermission.Views.ModulePermissionHubView,ManageModulePermission" />
+		</SiteMapNode>
+    <SiteMapNode title="关闭" moduleName="ShutdownModule"  />
+	</SiteMapNode>
+  <SiteMapNode isSeparator="true" />
+	<SiteMapNode title="编辑">
+    	<SiteMapNode title="查找和替换">
+		    <SiteMapNode title="快速查找" moduleName="FindQuickModule" viewAssemblyQualifiedName="HelloWorldModule.Views.HelloWorldView, HelloWorldModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+        <SiteMapNode title="在文件中查找" moduleName="FindQuickInFileModule" viewAssemblyQualifiedName="HelloWorldModule.Views.HelloWorldView, HelloWorldModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+		</SiteMapNode>
+ </SiteMapNode>
+  <SiteMapNode isSeparator="true" />
+	<SiteMapNode title="视图">
+		  <SiteMapNode title="打开" moduleName="OpenModule" viewAssemblyQualifiedName="HelloWorldModule.Views.HelloWorldView, HelloWorldModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+      <SiteMapNode title="打开方式" moduleName="OpenWayModule" viewAssemblyQualifiedName="HelloWorldModule.Views.HelloWorldView, HelloWorldModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+ </SiteMapNode>
+</SiteMapNode>

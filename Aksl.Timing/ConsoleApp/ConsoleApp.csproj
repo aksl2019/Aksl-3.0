@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Aksl.Timing.ConsoleApp</RootNamespace>
+    <AssemblyName>Aksl.Timing.ConsoleApp</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aksl.Timing\Aksl.Timing.csproj" />
+  </ItemGroup>
+
+</Project>

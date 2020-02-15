@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Tree.UI.Modules.LayoutUI.Views.TreeBarsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:views="clr-namespace:Tree.UI.Modules.LayoutUI.Views"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="TreeViewItemStyle"
+               TargetType="{x:Type TreeViewItem}">
+            <Setter Property="Background"
+                    Value="Transparent" />
+            <Setter Property="Padding"
+                    Value="0,0,0,0" />
+            <Setter Property="IsSelected"
+                    Value="{Binding IsSelected, Mode=TwoWay}" />
+            <Setter Property="IsExpanded"
+                    Value="{Binding IsExpanded, Mode=TwoWay}" />
+        </Style>
+        <HierarchicalDataTemplate x:Key="TreeBarItemDataTemplate"
+                                  ItemsSource="{Binding Children}">
+            <views:TreeBarItemView />
+        </HierarchicalDataTemplate>
+    </UserControl.Resources>
+
+    <TreeView ItemsSource="{Binding Path=TreeBarItems}"
+              ItemContainerStyle="{StaticResource TreeViewItemStyle}"
+              ItemTemplate="{StaticResource TreeBarItemDataTemplate}"
+              Margin="2" />
+</UserControl>

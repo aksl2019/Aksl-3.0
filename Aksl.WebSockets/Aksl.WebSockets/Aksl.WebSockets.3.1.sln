@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aksl.WebSockets.Listener", "Aksl.WebSockets.Listener\Aksl.WebSockets.Listener.csproj", "{874D7AB6-6229-45D7-B1C3-DCC81A02E295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aksl.WebSockets.Client", "Aksl.WebSockets.Client\Aksl.WebSockets.Client.csproj", "{04BDF844-7092-4B0F-90E2-59C875D40830}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{874D7AB6-6229-45D7-B1C3-DCC81A02E295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874D7AB6-6229-45D7-B1C3-DCC81A02E295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874D7AB6-6229-45D7-B1C3-DCC81A02E295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874D7AB6-6229-45D7-B1C3-DCC81A02E295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BDF844-7092-4B0F-90E2-59C875D40830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BDF844-7092-4B0F-90E2-59C875D40830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BDF844-7092-4B0F-90E2-59C875D40830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BDF844-7092-4B0F-90E2-59C875D40830}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D0963B7-DCE2-40FB-8779-E6F7D2271785}
+	EndGlobalSection
+EndGlobal
