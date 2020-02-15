@@ -1,20 +1,24 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Aksl.Retry.ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Startup.Instance
-                  .Initialize()
-                  //.StartLinearRetryStrategy()
-                  .StartExponentialRetryStrategy()
-                  .ConfigureAwait(false);
+            await RetryListener.Instance.StartAsync();
+
+            //  await RetryListener.Instance.InitializeTask();
+
+            // await RetryListener.Instance.StartLinearRetryStrategy();
+
+            //await RetryListener.Instance.StartExponentialRetryStrategy()
+            //                    .ConfigureAwait(false);
 
             Console.ReadLine();
 
-           // Console.WriteLine("Hello World!");
+            // Console.WriteLine("Hello World!");
         }
     }
 }

@@ -6,8 +6,10 @@ using Microsoft.Extensions.Logging;
 
 namespace Aksl.Retry
 {
-    public interface IRetryInvoker<out IRetryStrategy>
+    public interface IRetrier<TRetryStrategy> where TRetryStrategy : IRetryStrategy
     {
+        TRetryStrategy RetryStrategy { get; }
+
         void InvokeWithRetryAsync(Action<CancellationToken> operation, TimeSpan? operationTimeout = null,
                                   CancellationToken cancellationToken = default, ILogger logger = null);
 
