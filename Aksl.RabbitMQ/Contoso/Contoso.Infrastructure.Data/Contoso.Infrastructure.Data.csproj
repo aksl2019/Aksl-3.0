@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Aksl.BulkInsert\Aksl.BulkInsert\Aksl.BulkInsert.csproj" />
+    <ProjectReference Include="..\Contoso.Domain\Contoso.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="RepositoryFactory\" />
+  </ItemGroup>
+
+</Project>

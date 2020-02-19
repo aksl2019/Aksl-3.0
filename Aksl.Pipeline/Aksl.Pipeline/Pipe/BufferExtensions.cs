@@ -79,7 +79,7 @@ namespace Aksl.Pipeline
                     //    PropertyNameCaseInsensitive = true
                     //});
                     var deserializeMsg = JsonSerializer.Deserialize<TMessage>(lineString);
-                   
+
                     messageList.Add(deserializeMsg);
 
                     start = buffer.GetPosition(1, position.Value);
@@ -106,7 +106,7 @@ namespace Aksl.Pipeline
                 if (position != null)
                 {
                     var sequence = buffer.Slice(0, position.Value);
-                    
+
                     lineString = PipeTextReader.ReadString(sequence, Encoding.UTF8);
                     readLines.Add(lineString);
                     byteList.Add(Encoding.UTF8.GetBytes(lineString));
@@ -123,7 +123,7 @@ namespace Aksl.Pipeline
         {
             SequencePosition? position = null;
             SequencePosition start = buffer.Start;
-            string lineString =default;
+            string lineString = default;
 
             List<string> readLines = new List<string>();
 

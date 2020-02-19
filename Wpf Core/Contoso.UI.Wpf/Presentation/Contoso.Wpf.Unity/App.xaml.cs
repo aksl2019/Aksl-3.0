@@ -3,6 +3,9 @@
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
+using Prism.Services.Dialogs;
+
+using Aksl.Toolkit.Services;
 
 using Contoso.Infrastructure;
 using Contoso.Modules.Menu;
@@ -11,6 +14,7 @@ using Contoso.Modules.Home;
 using Contoso.Modules.Shell;
 using Contoso.Modules.Shell.ViewModels;
 using Contoso.Modules.Shell.Views;
+using Contoso.Modules.Customer;
 
 namespace Contoso.UI
 {
@@ -28,6 +32,9 @@ namespace Contoso.UI
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterSingleton(typeof(IDialogService), typeof(DialogService));
+            containerRegistry.RegisterSingleton(typeof(IDialogViewService), typeof(DialogViewService));
+
             containerRegistry.RegisterSingleton(typeof(IMenuProvider), typeof(MenuProvider));
             containerRegistry.RegisterSingleton(typeof(IMenuService), typeof(MenuService));
         }
@@ -36,6 +43,7 @@ namespace Contoso.UI
         {
             moduleCatalog.AddModule(typeof(HomeUIModule).Name, typeof(HomeUIModule).AssemblyQualifiedName, InitializationMode.WhenAvailable);
             moduleCatalog.AddModule(typeof(TreeBarModule).Name, typeof(TreeBarModule).AssemblyQualifiedName, InitializationMode.WhenAvailable);
+            moduleCatalog.AddModule(typeof(CustomerModule).Name, typeof(CustomerModule).AssemblyQualifiedName, InitializationMode.WhenAvailable);
 
             moduleCatalog.AddModule(typeof(MenuUIModule).Name, typeof(MenuUIModule).AssemblyQualifiedName, InitializationMode.WhenAvailable);
             moduleCatalog.AddModule(typeof(ShellModule).Name, typeof(ShellModule).AssemblyQualifiedName, InitializationMode.WhenAvailable, typeof(MenuUIModule).Name);

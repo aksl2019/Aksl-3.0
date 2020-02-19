@@ -8,7 +8,6 @@ namespace Aksl.Concurrency
         private Action _action;
 
         public DisposeAction(Action action)
-
         {
             _isDisposed = false;
             _action = action;

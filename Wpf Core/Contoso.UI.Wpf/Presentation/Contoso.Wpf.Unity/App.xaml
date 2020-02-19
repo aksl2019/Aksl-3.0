@@ -3,6 +3,15 @@
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         xmlns:prism="http://prismlibrary.com/">
     <Application.Resources>
+        <ResourceDictionary>
 
+            <!--<x:String x:Key="AppName">Contoso UI Wpf</x:String>-->
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Converters.xaml" />
+               
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

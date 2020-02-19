@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Contoso.Modules.MenuUI.Views.MenuItemCommandView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+    <!--<Button Content="{Binding Path=Title,Mode=OneWay}"
+            Command="{Binding Path=BuildTreeBarCommand}"
+            Width="80"
+            Height="30"
+            VerticalAlignment="Center" />-->
+    <Border Background="WhiteSmoke"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="2"
+            Width="100"
+            Height="30">
+        <TextBlock Text="{Binding Path=Title,Mode=OneWay}"
+                   FontSize="16"
+                   FontWeight="Thin"
+                   HorizontalAlignment="Center"
+                   Margin="2" />
+    </Border>
+</UserControl>

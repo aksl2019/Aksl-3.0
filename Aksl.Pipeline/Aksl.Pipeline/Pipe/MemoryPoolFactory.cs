@@ -10,8 +10,10 @@ namespace Aksl.Pipeline
 #if DEBUG
             return new DiagnosticMemoryPool(CreateSlabMemoryPool());
 #else
-            return CreateSlabMemoryPool();
+                        return CreateSlabMemoryPool();
 #endif
+
+            //return CreateSlabMemoryPool();
         }
 
         public static MemoryPool<byte> CreateSlabMemoryPool()

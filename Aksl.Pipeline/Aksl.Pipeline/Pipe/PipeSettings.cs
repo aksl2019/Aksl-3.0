@@ -34,6 +34,7 @@ namespace Aksl.Pipeline
             MinimumSegmentSize = 4 * 1024,//4K
             MinAllocBufferSize = 2 * 1024,//2K
         };
+
         public static PipeSettings DefaultOutput => new PipeSettings()
         {
             //ApplicationSchedulingMode = SchedulingMode.Default,

@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Contoso.Modules.Customer</AssemblyName>
+    <RootNamespace>Contoso.Modules.Customer</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.WindowsRuntime" Version="4.7.0" />
+    <PackageReference Include="System.Runtime.WindowsRuntime.UI.Xaml" Version="4.7.0" />
+    <ProjectReference Include="..\..\..\..\..\Aksl.Toolkit\Aksl.Toolkit.csproj" />
+    <ProjectReference Include="..\..\..\Infrastructure\Contoso.Infrastructure\Contoso.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Toolkits\Prism Library\Prism.Unity.Wpf\Prism.Unity.Wpf.csproj" />
+    <ProjectReference Include="..\..\..\Toolkits\Prism Library\Prism.Wpf\Prism.Wpf.csproj" />
+    <ProjectReference Include="..\..\..\Toolkits\Prism Library\Prism\Prism.csproj" />
+    <Reference Include="Windows">
+      <HintPath>$(MSBuildProgramFiles32)\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Group\CustomerGroupView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Group\CustomerContentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Group\GroupedCustomerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\Group\CustomerGroupHubView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Group\CustomerGroupView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Group\CustomerContentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Group\GroupedCustomerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Tab\CustomerHubView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

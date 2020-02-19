@@ -118,6 +118,10 @@ namespace Aksl.Sockets.Client.Configuration
 
         public string DisplayName => GetDisplayName();
 
+        public SocketPipes PipeSettings { get; set; }
+
+        public BlockSettings BlockSettings { get; set; }
+
         public string GetDisplayName()
         {
            // var scheme = "http";

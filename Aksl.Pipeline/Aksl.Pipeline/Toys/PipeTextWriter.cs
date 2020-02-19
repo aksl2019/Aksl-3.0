@@ -287,7 +287,10 @@ namespace Aksl.Pipeline
             if (forced || AutoFlush)
             {
                 var flush = _writer.FlushAsync();
-                if (!flush.IsCompletedSuccessfully) flush.AsTask().Wait();
+                if (!flush.IsCompletedSuccessfully)
+                {
+                    flush.AsTask().Wait();
+                }
             }
         }
         #endregion
@@ -340,7 +343,7 @@ namespace Aksl.Pipeline
         }
 
         private void WriteImpl(ReadOnlySpan<char> chars) => WriteImpl(_writer, chars, _encoding, _encoder);
-       
+
         private static int WriteImpl(PipeWriter writer, ReadOnlySpan<char> chars, Encoding encoding, Encoder encoder)
         {
             if (chars.IsEmpty) return 0;

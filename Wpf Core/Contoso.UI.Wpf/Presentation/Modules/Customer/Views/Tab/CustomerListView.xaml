@@ -1,0 +1,218 @@
+﻿<UserControl x:Class="Contoso.Modules.Customer.Views.CustomerListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:views="clr-namespace:Contoso.Modules.Customer.Views"
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+    <UserControl.Resources>
+        <!--https://www.wpf-tutorial.com/listview-control/listview-grouping/-->
+        <LinearGradientBrush x:Key="headerBackground"
+                             StartPoint="0.5,0"
+                             EndPoint="0.5,1">
+            <GradientStop Color="#66000088"
+                          Offset="0" />
+            <GradientStop Color="#BB000088"
+                          Offset="1" />
+        </LinearGradientBrush>
+
+        <CollectionViewSource x:Key="groupCustomerSource"
+                              Source="{Binding Path=AllCustomers}">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="IsCompany" />
+            </CollectionViewSource.GroupDescriptions>
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="IsCompany"
+                                     Direction="Descending" />
+                <scm:SortDescription PropertyName="DisplayName"
+                                     Direction="Ascending" />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+
+        <!--<GroupStyle x:Key="CustomerGroupStyle">
+            <GroupStyle.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock x:Name="txt"
+                               Background="{StaticResource headerBackground}"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               Margin="1"
+                               Padding="4,2,0,2"
+                               Text="People" />
+                    <DataTemplate.Triggers>
+                        <DataTrigger Binding="{Binding Path=Name}"
+                                     Value="True">
+                            <Setter TargetName="txt"
+                                    Property="Text"
+                                    Value="Companies" />
+                        </DataTrigger>
+                    </DataTemplate.Triggers>
+                </DataTemplate>
+            </GroupStyle.HeaderTemplate>
+        </GroupStyle>-->
+
+        <!--<DataTemplate x:Key="headerTemplate">
+            <views:CustomerItemHeader x:Name="headerTextBlock"
+                                      HorizontalAlignment="Stretch"
+                                      Background="{StaticResource headerBackground}"
+                                      Title="People" />
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding Path=Name}"
+                             Value="True">
+                    <Setter TargetName="headerTextBlock"
+                            Property="Title"
+                            Value="Companies" />
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>-->
+        
+        <DataTemplate x:Key="headerTemplate">
+            <StackPanel Orientation="Horizontal"
+                        Background="{StaticResource headerBackground}">
+                <TextBlock x:Name="headerTextBlock"
+                           Text="People"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           Margin="1"
+                           Padding="4,2,0,2"
+                           VerticalAlignment="Center" />
+                <TextBlock Text="{Binding ItemCount}"
+                           FontSize="16"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="20,0,20,0"
+                           VerticalAlignment="Center" />
+                <TextBlock Text=" item(s)"
+                           FontSize="16"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center" />
+            </StackPanel>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding Path=Name}"
+                             Value="True">
+                    <Setter TargetName="headerTextBlock"
+                            Property="Text"
+                            Value="Companies" />
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+
+        <Style x:Key="customerGroupStyle"
+               TargetType="{x:Type GroupItem}">
+            <Setter Property="Background"
+                    Value="{StaticResource headerBackground}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                        <Expander IsExpanded="True">
+                            <!--HeaderTemplate="{StaticResource headerTemplate}"-->
+                            <Expander.Header>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock x:Name="headerTextBlock"
+                                               Text="People"
+                                               FontWeight="Bold"
+                                               Foreground="Gray"
+                                               FontSize="16"
+                                               VerticalAlignment="Bottom" />
+                                    <TextBlock Text="{Binding ItemCount}"
+                                               FontSize="16"
+                                               Foreground="Green"
+                                               FontWeight="Bold"
+                                               FontStyle="Italic"
+                                               Margin="10,0,0,0"
+                                               VerticalAlignment="Bottom" />
+                                    <TextBlock Text=" item(s)"
+                                               FontSize="16"
+                                               Foreground="Silver"
+                                               FontStyle="Italic"
+                                               VerticalAlignment="Bottom" />
+                                </StackPanel>
+                            </Expander.Header>
+                            <ItemsPresenter />
+                        </Expander>
+                        <ControlTemplate.Triggers>
+                            <DataTrigger Binding="{Binding Path=Name}"
+                                         Value="True">
+                                <Setter TargetName="headerTextBlock"
+                                        Property="Text"
+                                        Value="Companies" />
+                            </DataTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="customerItemStyle"
+               TargetType="{x:Type ListViewItem}">
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Stretch" />
+            <!--<Setter Property="IsSelected"
+                    Value="{Binding Path=IsSelected, Mode=TwoWay}" />-->
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="ItemsControl.AlternationIndex"
+                                   Value="1" />
+                        <Condition Property="IsSelected"
+                                   Value="False" />
+                        <Condition Property="IsMouseOver"
+                                   Value="False" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background"
+                            Value="#EEEEEEEE" />
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom"
+              Margin="0,2,4,2">
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal"
+                        VerticalAlignment="Center">
+                <TextBlock Text="Total selected sales: " />
+                <ContentPresenter Content="{Binding Path=TotalSelectedSales}"
+                                  ContentStringFormat="c" />
+            </StackPanel>
+        </Grid>
+      
+        <ListView AlternationCount="2"
+                  ItemContainerStyle="{StaticResource customerItemStyle}"
+                  ItemsSource="{Binding Source={StaticResource groupCustomerSource}}"
+                  SelectedItem="{Binding Path=SelectedCustomerItem,Mode=TwoWay}"
+                  SelectionMode="Single">
+            <ListView.GroupStyle>
+                <GroupStyle HeaderTemplate="{StaticResource headerTemplate}" />
+                <!--<GroupStyle ContainerStyle="{StaticResource customerGroupStyle}" />-->
+                <!--<StaticResourceExtension ResourceKey="CustomerGroupStyle" />-->
+            </ListView.GroupStyle>
+
+            <ListView.View>
+                <GridView AllowsColumnReorder="True">
+                    <GridViewColumn Header="Name" Width="200"
+                                    DisplayMemberBinding="{Binding Path=DisplayName}" />
+                    <GridViewColumn Header="E-mail"
+                                    Width="200"
+                                    DisplayMemberBinding="{Binding Path=Email}" />
+                    <GridViewColumn Header="Total Sales"
+                                    Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ContentPresenter Content="{Binding Path=TotalSales}"
+                                                  ContentStringFormat="c"
+                                                  HorizontalAlignment="Right" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </DockPanel>
+</UserControl>
