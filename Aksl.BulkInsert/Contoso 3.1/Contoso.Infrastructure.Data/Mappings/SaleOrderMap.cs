@@ -42,6 +42,10 @@ namespace Contoso.Infrastructure.Data.Mappings
                    .HasMaxLength(128)
                    .IsRequired();
 
+            builder.Property(so=> (so.RowVersion))
+                   .IsRowVersion()
+                   .HasColumnName("RowVersion"); 
+
             //https://docs.microsoft.com/zh-cn/ef/core/modeling/relationships
             //单个导航属性
             builder.HasMany(o => o.OrderItems)

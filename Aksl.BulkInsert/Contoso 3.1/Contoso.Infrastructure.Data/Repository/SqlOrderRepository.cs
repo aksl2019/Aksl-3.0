@@ -32,6 +32,7 @@ namespace Contoso.Infrastructure.Data.Repository
         private readonly IDataflowPipeBulkInserter<SaleOrder, SaleOrder> _dataflowPipeBulkInserter;
         private readonly IPipeBulkInserter<SaleOrder, SaleOrder> _pipeBulkInserter;
         private readonly IDataflowNoResultHandler<SaleOrder> _dataflowBulkDeleter;
+        private readonly IDataflowNoResultHandler<SaleOrder> _dataflowBulkUpdater;
 
         private readonly ILoggerFactory _loggerFactory;
         private readonly ILogger _logger;
@@ -50,7 +51,8 @@ namespace Contoso.Infrastructure.Data.Repository
             _dataflowBulkInserter = _serviceProvider.GetRequiredService<IDataflowBulkInserter<SaleOrder, SaleOrder>>();
             _dataflowBulkInserter.InsertHandler = (async (orders) =>
             {
-                // return await this.BulkInsertAsync(orders);
+                 // await _contosoContext.ExecuteSqlBulkCopyAync<SaleOrder>(orders.ToList());
+                 //return await this.BulkInsertAsync(orders);
                 return await this.InsertAsync(orders);
             });
 
@@ -78,8 +80,29 @@ namespace Contoso.Infrastructure.Data.Repository
                                              where saleOrderIds.Contains(so.Id)
                                              select so).ToListAsync();
 
-              //  var deleteSaleOrder = _contosoContext.SaleOrders.WhereIn<SaleOrder, int>(so => so.Id, saleOrderIds).ToList();
+                //  var deleteSaleOrder = _contosoContext.SaleOrders.WhereIn<SaleOrder, int>(so => so.Id, saleOrderIds).ToList();
                 await this.DeleteAsync(deleteSaleOrder);
+            });
+
+            _dataflowBulkUpdater = _serviceProvider.GetRequiredService<IDataflowNoResultHandler<SaleOrder>>();
+            _dataflowBulkUpdater.Handle = (async (saleOrders) =>
+            {
+                var saleOrderIds = saleOrders.Select(o => o.Id).ToArray();
+                var dbSaleOrders = await (from so in _contosoContext.SaleOrders
+                                          where saleOrderIds.Contains(so.Id)
+                                          select so).ToListAsync();
+
+                foreach (var dbSaleOrder in dbSaleOrders)
+                {
+                    var updateSaleOrder = saleOrders.FirstOrDefault(o => o.Id == dbSaleOrder.Id);
+                    dbSaleOrder.Status = updateSaleOrder.Status;
+                    dbSaleOrder.RowVersion = updateSaleOrder.RowVersion;
+                    //var dbSaleOrder = await _contosoContext.SaleOrders.FirstOrDefaultAsync(o => o.Id == saleOrder.Id);
+                    //await EntityHelper.TryUpdateEntryAsync<SaleOrder>(_contosoContext, dbSaleOrder, so => so.Status, so => so.RowVersion);
+                }
+
+                //  var deleteSaleOrder = _contosoContext.SaleOrders.WhereIn<SaleOrder, int>(so => so.Id, saleOrderIds).ToList();
+                await this.UpdateAsync(dbSaleOrders);
             });
 
             _logger = loggerFactory.CreateLogger(nameof(SqlOrderRepository));
@@ -151,6 +174,16 @@ namespace Contoso.Infrastructure.Data.Repository
             await _dataflowBulkDeleter.HandleAsync(saleOrders);
 
             _logger.LogInformation($"----finish bulk delete {saleOrders.Count()} sale orders,cost time:{sw.Elapsed},ThreadId={Thread.CurrentThread.ManagedThreadId},now:{DateTime.Now.TimeOfDay}\"----");
+        }
+
+        public async ValueTask UpdateSaleOrdersAsync(IEnumerable<SaleOrder> saleOrders)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            _logger.LogInformation($"----begin bulk update { saleOrders.Count()} sale orders,ThreadId={Thread.CurrentThread.ManagedThreadId},now:{DateTime.Now.TimeOfDay}----");
+
+            await _dataflowBulkUpdater.HandleAsync(saleOrders);
+
+            _logger.LogInformation($"----finish bulk update {saleOrders.Count()} sale orders,cost time:{sw.Elapsed},ThreadId={Thread.CurrentThread.ManagedThreadId},now:{DateTime.Now.TimeOfDay}\"----");
         }
     }
 }

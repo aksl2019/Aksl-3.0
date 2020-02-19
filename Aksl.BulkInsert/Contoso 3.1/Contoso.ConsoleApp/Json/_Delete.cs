@@ -21,8 +21,8 @@ namespace Contoso.ConsoleApp
 {
     public partial class WebApiSender
     {
-        #region Delete Methods
-        public async ValueTask DeleteSaleOrdersAsync()
+        #region Delete Method
+        public async ValueTask _DeleteSaleOrdersAsync()
         {
             int pageIndex = 0;
             int pageSize = 5_000;

@@ -21,7 +21,9 @@ namespace Contoso.ConsoleApp
 
         private static string[] ProductePrix = { "Blue", "Red", "Green", "White", "Orange" };
 
-        private static readonly string[] OrderStates = { "Pending", "Processed", "Shipped" };
+        //private static readonly string[] OrderStatuses = { "Pending", "Processed", "Shipped" };
+
+        private static readonly string[] OrderStatuses = { "Pending", "Processed" };
 
         private static readonly string[] Customers = { "Alice", "Bill", "Cortana", "Smith", "Jack" };
 
@@ -56,7 +58,7 @@ namespace Contoso.ConsoleApp
                 var newOrderDto = new SaleOrderDto()
                 {
                     OrderNumber = _orderIds[i],
-                    Status = (OrderStatus)Enum.Parse(typeof(OrderStatus), OrderStates[_random.Next(0, 2)]),
+                    Status = (OrderStatus)Enum.Parse(typeof(OrderStatus), OrderStatuses[_random.Next(0, 1)]),
                     CreatedOnUtc = DateTime.UtcNow,
                     CustomerId = Customers[_random.Next(0, 4)],
                     //  ThreadId = Thread.CurrentThread.ManagedThreadId,

@@ -133,6 +133,20 @@ namespace Contoso.DataSource.SqlServer
                 throw ex;
             }
         }
+
+        public async  ValueTask UpdateSaleOrdersAsync(IEnumerable<SaleOrderDto> saleOrderDtos)
+        {
+            try
+            {
+                var saleOrderModels = _mapper.Map<IEnumerable<SaleOrder>>(saleOrderDtos);
+                await _sqlOrderRepository.UpdateSaleOrdersAsync(saleOrderModels);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{nameof(DeleteSaleOrdersAsync)} Error: {ex.Message}");
+                throw ex;
+            }
+        }
         #endregion
     }
 }

@@ -16,7 +16,7 @@ namespace Aksl.Concurrency
     /// </summary>
     public class ActionBlock : IDisposable
     {
-        private AsyncLock _theLock;
+        private readonly AsyncLock _theLock;
 
         public ActionBlock()
         {

@@ -25,6 +25,8 @@ namespace Contoso.DataSource
 
         ValueTask<IEnumerable<SaleOrderDto>> PipeBulkInsertSaleOrdersAsync(IEnumerable<SaleOrderDto> saleOrderDtos);
 
+        ValueTask UpdateSaleOrdersAsync(IEnumerable<SaleOrderDto> saleOrderDtos);
+
         ValueTask DeleteSaleOrdersAsync(IEnumerable<SaleOrderDto> saleOrders);
 
         IAsyncEnumerable<SaleOrderDto> GetPagedSaleOrderListAsync(int pageIndex = 0, int pageSize = int.MaxValue);

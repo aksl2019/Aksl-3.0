@@ -6,7 +6,7 @@ namespace Aksl.Concurrency
 {
     public sealed class AsyncLock : IDisposable
     {
-        private SemaphoreSlim _semaphore = new SemaphoreSlim(initialCount: 1, maxCount: 1);
+        private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(initialCount: 1, maxCount: 1);
 
         public async Task<IDisposable> LockAsync(CancellationToken cancellationToken = default)
         {
@@ -16,9 +16,6 @@ namespace Aksl.Concurrency
             return new DisposeAction(() => _semaphore.Release());
         }
 
-        public void Dispose()
-        {
-            _semaphore.Dispose();
-        }
+        public void Dispose() => _semaphore.Dispose();
     }
 }

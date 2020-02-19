@@ -143,8 +143,9 @@ namespace Contoso.ConsoleApp
                 Services.AddScoped(typeof(IDataflowBulkInserter<,>), typeof(DataflowBulkInserter<,>));
                 Services.AddScoped(typeof(IDataflowPipeBulkInserter<,>), typeof(DataflowPipeBulkInserter<,>));
                 Services.AddScoped(typeof(IPipeBulkInserter<,>), typeof(PipeBulkInserter<,>));
-                Services.AddScoped(typeof(IDataflowNoResultHandler<>), typeof(DataflowNoResultHandler<>));
-              
+                //Services.AddScoped(typeof(IDataflowNoResultHandler<>), typeof(DataflowNoResultHandler<>));
+                Services.AddTransient(typeof(IDataflowNoResultHandler<>), typeof(DataflowNoResultHandler<>));
+
                 //Repository
                 Services.AddScoped<ISqlOrderRepository, SqlOrderRepository>();
 

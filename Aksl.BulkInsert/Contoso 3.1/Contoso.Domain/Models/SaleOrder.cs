@@ -47,6 +47,8 @@ namespace Contoso.Domain.Models
         /// 含税总金额
         /// </summary>
         public decimal TotalCostIncludeTax => OrderItems.Sum(oi => oi.TotalCostIncludeTax);
+
+        public byte[] RowVersion { get; set; }
         #endregion
 
         #region Navigation properties

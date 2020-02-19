@@ -18,9 +18,9 @@ using Microsoft.AspNetCore.Mvc;
 
 using Contoso.Infrastructure.Data.Context;
 
-//Add-Migration init -Contex  ContosoContext
+//Add-Migration Initial -Contex  ContosoContext
 //Remove-Migration   -Contex  ContosoContext
-//Update-Database init  -Contex  ContosoContext
+//Update-Database Initial  -Contex  ContosoContext
 
 namespace Contoso.Api
 {

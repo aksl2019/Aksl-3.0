@@ -15,7 +15,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Aksl.Concurrency;
 using Aksl.BulkInsert;
 
-using Contoso.Domain.Models;
 using Contoso.DataSource.Dtos;
 using Contoso.DataSource;
 

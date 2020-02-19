@@ -21,7 +21,10 @@ namespace Contoso.ConsoleApp
             {
                 blockCount = Environment.ProcessorCount/12;//1
 
-                minPerBlock = 10000;
+                //minPerBlock = 1000;
+                //maxPerBlock = 2000;//10000*1=10,000
+
+                minPerBlock = 5000;
                 maxPerBlock = 10000;//10000*1=10,000
             }
             else if (messageCount > 10000 && messageCount <= 100000)
@@ -31,15 +34,21 @@ namespace Contoso.ConsoleApp
                 //minPerBlock = 20000;
                 //maxPerBlock = 20000;//20000*4=80,000
 
-                minPerBlock = 100000;
-                maxPerBlock = 100000;//20000*2=40,000
+                //minPerBlock = 5000;
+                //maxPerBlock = 5000;//20000*2=40,000
+
+                minPerBlock =20000;
+                maxPerBlock =30000;//20000*2=40,000
             }
             else if (messageCount > 100000 && messageCount <= 500000)
             {
                 blockCount = Environment.ProcessorCount ;//12
 
-                minPerBlock =100000;
-                maxPerBlock = 100000;//20000*12=2400,000
+                minPerBlock = 5000;
+                maxPerBlock = 5000;//20000*2=40,000
+
+                //minPerBlock =100000;
+                //maxPerBlock = 100000;//20000*12=2400,000
             }
             else if (messageCount > 500000 && messageCount <= 1000000)//1百万
             {

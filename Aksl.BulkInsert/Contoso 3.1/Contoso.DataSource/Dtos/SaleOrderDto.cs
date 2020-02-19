@@ -18,6 +18,8 @@ namespace Contoso.DataSource.Dtos
 
         public string CustomerId { get; set; }
 
+        public byte[] RowVersion { get; set; }
+
         // public int ThreadId { get; set; }
 
         /// <summary>

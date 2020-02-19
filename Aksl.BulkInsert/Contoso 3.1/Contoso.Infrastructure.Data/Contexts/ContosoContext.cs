@@ -3,9 +3,19 @@
 using Contoso.Domain.Models;
 using Contoso.Infrastructure.Data.Mappings;
 
+//Drop-Database
+
 //Add-Migration init -Contex  ContosoContext
 //Remove-Migration   -Contex  ContosoContext
 //Update-Database init  -Contex  ContosoContext
+
+//Add-Migration Initial -Contex  ContosoContext
+//Remove-Migration   -Contex  ContosoContext
+//Update-Database Initial  -Contex  ContosoContext
+
+//Add-Migration RowVersion -Contex  ContosoContext
+//Remove-Migration -Contex  ContosoContext
+//Update-Database RowVersion  -Contex  ContosoContext
 
 namespace Contoso.Infrastructure.Data.Context
 {

@@ -25,8 +25,10 @@ namespace Contoso.ConsoleApp
         public async ValueTask GetAllPagedSaleOrdersAsync()
         {
             int pageIndex = 0;
-            int pageSize = 10_000;
+            int pageSize = 20_000;
             int totalCount = 0;
+            int maxRetryCount = 1;
+            int currentRetryCount = 0;
 
             var logger = _loggerFactory.CreateLogger($"{ nameof(GetAllPagedSaleOrdersAsync)}");
 
@@ -51,11 +53,21 @@ namespace Contoso.ConsoleApp
                     {
                         totalCount++; 
                         currentCount++;
+
+                        Debug.Assert(order.Status== OrderStatus.Processed);
+
                         //Console.WriteLine($"OrderId: {order.Id},OrderStatus: {order.Status}");
                         //Console.WriteLine($"OrderId: {order.Id},OrderNumber: {order.OrderNumber},OrderStatus: {order.Status},Customer: {order.CustomerId}");
                     }
 
                     if (currentCount <= 0)
+                    {
+                        //_cancellationTokenSource.CancelAfter(TimeSpan.FromMilliseconds(200));
+                        break;
+                    }
+
+                    currentRetryCount++;
+                    if (currentRetryCount >= maxRetryCount)
                     {
                         //_cancellationTokenSource.CancelAfter(TimeSpan.FromMilliseconds(200));
                         break;

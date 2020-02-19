@@ -9,22 +9,28 @@ namespace Contoso.ConsoleApp
         {
             await WebApiSender.Instance.InitializeTask();
 
-            //await WebApiSender.Instance.GetAllPagedSaleOrdersAsync();
+           //await WebApiSender.Instance.BulkCopyAsync();
 
-            await WebApiSender.Instance.DeleteSaleOrdersAsync();
+            //await WebApiSender.Instance.DeleteSaleOrdersAsync();
+
+            //await WebApiSender.Instance.UpdateSaleOrdersAsync();
+
+            //await WebApiSender.Instance.GetAllPagedSaleOrdersAsync();
 
             #region Dataflow Retry
             //10万
             //await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 5000, maxRetryCount: 2);
             //await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 10000, maxRetryCount: 1);
-            //3.0
+            //await WebApiSender.Instance.DataflowBulkInsertBlockAsync (orderCount: 100_000);
             //DataflowBulkInserter: Information: CreateBlockers's ExecutionTime=00:01:14.2061584,Count="5000",count/time(sec):68,ThreadId=9,now:"19:45:28.7684327"
             //SqlOrderRepository: Information: ----finish dataflow bulk insert 5000 orders,cost time:00:01:14.3126451,ThreadId = 12,now: 19:45:28.7702170"----
             //DataflowBulkInser - 1 - OrderCount:100000: Information: ----finish dataflow bulk insert 100000 orders,cost time:"00:02:31.9789927",transport time:00:02:29.9639361,count / time(sec):667,now: "19:45:29.7857405"----
 
+            //DataflowBulkInser - 1:100000: Information: ----dataflow bulk insert 100000 orders,cost time:"00:03:21.5859265",transport time:00:03:21.4077372,count / time(sec):497,now: "18:46:49.9859865"----
+
             //20万
             //await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(maxRetryCount: 200, orderCount: 1000);//每次发送1000
-            // await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 10000, maxRetryCount: 2);
+           // await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 10000, maxRetryCount: 2);
             //2.2
             //DataflowBulkInserter:Information: CreateBlockers's ExecutionTime=00:00:06.7524192,Count="1000",count/time(sec):149,ThreadId=10,now:"00:31:25.8603656"
             //SqlOrderRepository:Information: ----finish dataflow bulk insert 1000 orders,cost time:00:00:06.7581398,ThreadId=12,now:00:31:25.8632594"----
@@ -38,7 +44,8 @@ namespace Contoso.ConsoleApp
             //DataflowBulkInser - 1 - OrderCount:200000: Information: ----finish dataflow bulk insert 200000 orders,cost time:"00:05:01.1372182",transport time:00:04:59.1239372,count / time(sec):669,now: "19:55:04.9446089"----
 
             //50万
-            //await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount:10000, maxRetryCount: 5);
+            //await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 5000, maxRetryCount: 10);
+            await WebApiSender.Instance.DataflowBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount:10000, maxRetryCount: 5);
             //2.2
             //DataflowBulkInserter: Information: CreateBlockers's ExecutionTime=00:02:37.1447949,Count="5000",count/time(sec):32,ThreadId=41,now:"17:28:13.5685400"
             //SqlOrderRepository: Information: ----finish dataflow bulk insert 5000 orders,cost time:00:02:37.1579711,ThreadId = 39,now: 17:28:13.5720131"----
@@ -150,10 +157,12 @@ namespace Contoso.ConsoleApp
             //DataflowPipeInsert-1-OrderCount:1000000: Information:----finish dataflow pipe bulk insert 1000000 orders,cost time:"00:29:56.0384273,count/time(sec):557,now:"16:08:16.8449744"----
 
             //200万
-            //await WebApiSender.Instance.DataflowPipeBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 10000, maxRetryCount: 20);
+            //await WebApiSender.Instance.DataflowPipeBulkInsertRetryTasksAsync(frequency: 1000, taskCount: 10, count: 1, orderCount: 10_000, maxRetryCount: 20);
             //2.2
             //3.0-10000
-
+            //DataflowPipeBulkInserter: Information: CreateBlockers's ExecutionTime=00:09:05.1752381,Count="10000",ThreadId=16,now:"15:08:41.2443104"
+            //SqlOrderRepository: Information: ----finish dataflow pipe bulk insert 10000 orders,cost time:00:09:05.1854575,ThreadId=32,now:15:08:41.2470779"----
+            //DataflowPipeInsert-1-OrderCount:2000000: Information: ----finish dataflow pipe bulk insert 2000000 orders,cost time:"01:48:27.5800672,count/time(sec):308,now:"15:08:42.2720037"----
             //500万
             //50万*10=500万,打开10个App
             //3.0-10000
